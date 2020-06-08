@@ -5,3 +5,16 @@ namespace SeleniumFramework.UIElements
     {
     }
 }
+
+version: 2.1
+
+ orbs:
+  win: circleci/windows@2.2.0
+
+ jobs:
+   build:
+     executor: win/default     
+    
+     steps:
+       - checkout
+       - run: dotnet build
