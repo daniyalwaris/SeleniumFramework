@@ -66,6 +66,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Config.cs" />
     <Compile Include="Driver.cs" />
     <Compile Include="UIElements\HomePage.cs" />
     <Compile Include="TestList.cs" />
