@@ -1,6 +1,6 @@
 ﻿
-using OpenQA.Selenium.Support.PageObjects;
 
+using SeleniumExtras.PageObjects;
 namespace SeleniumFramework
 {
     public class HomePage
