@@ -1,8 +1,8 @@
 version: 2.1
-  orbs:
-        windows: circleci/windows@2.4.0
-  jobs:
-   build:
+orbs:
+     windows: circleci/windows@2.4.0
+jobs:
+ build:
      executor: win/default        
      steps:
        - checkout
