@@ -1,5 +1,6 @@
 ﻿
 
+using OpenQA.Selenium;
 using SeleniumExtras.PageObjects;
 namespace SeleniumFramework
 {
@@ -7,7 +8,11 @@ namespace SeleniumFramework
     {
         public HomePage()
         {
+            //
             PageFactory.InitElements(Driver.driver,this);
         }
+        
+        [FindsBy(How = How.CssSelector,Using = "#page-17 > header > h1")]
+        public IWebElement Headline { get; set; }
     }
 }

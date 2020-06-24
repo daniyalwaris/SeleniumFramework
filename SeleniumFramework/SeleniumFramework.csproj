@@ -66,8 +66,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Navigate.cs" />
     <Compile Include="Config.cs" />
     <Compile Include="Driver.cs" />
+    <Compile Include="UIElements\Class1.cs" />
     <Compile Include="UIElements\HomePage.cs" />
     <Compile Include="TestList.cs" />
     <Compile Include="EntryPoint.cs" />
