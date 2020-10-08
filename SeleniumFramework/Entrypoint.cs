@@ -12,9 +12,18 @@ namespace SeleniumFramework
             // Thread.Sleep(3000);
             // driver.Quit();
 
-            Menu menu = new Menu();
-            Driver.driver.Navigate().GoToUrl("http://testing.todvachev.com/");
-            menu.Selectors.Click();
+            Driver.driver.Navigate().GoToUrl("https://testing.todorvachev.com/");
+
+            Navigate.LoginformThroughTheMenu();
+
+            Thread.Sleep(200);
+
+            Driver.driver.Navigate().GoToUrl("https://testing.todorvachev.com/");
+
+            Navigate.LoginformAccessThroughTesPost();
+
+            Thread.Sleep(200);
+
         }
     }
 

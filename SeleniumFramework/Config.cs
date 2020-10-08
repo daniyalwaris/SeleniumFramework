@@ -1,19 +1,18 @@
-﻿
-
-namespace SeleniumFramework
+﻿namespace SeleniumFramework
 {
     public static class config
     {
+        // The base URL
         public static string BaseURL = "http://testing.todorvachev.com";
 
         public static class Credentials
         {
             public static class Valid
             {
-                public static string Username = "";
-                public static string Password = "";
-                public static string RepeatPassword = "";
-                public static string Email = "";
+                public static string Username = "ValidUser";
+                public static string Password = "asdf1234!";
+                public static string RepeatPassword = "asdf1234!";
+                public static string Email = "example@gmail.com";
             }
             public static class Invalid
             {
