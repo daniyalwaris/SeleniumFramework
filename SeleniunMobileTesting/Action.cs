@@ -1,4 +1,8 @@
-﻿using OpenQA.Selenium.Chrome;
+﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Appium.Android;
+using OpenQA.Selenium.Appium.Enums;
+using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Remote;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +15,17 @@ namespace SeleniumFramework
     {
         public static void initializedriver()
         {
-            Driver.driver = new ChromeDriver();
+#pragma warning disable CS0618 // Type or member is obsolete
+#pragma warning disable CS0618 // Type or member is obsolete
+#pragma warning disable CS0618 // Type or member is obsolete
+            DesiredCapabilities cap = new DesiredCapabilities();
+#pragma warning restore CS0618 // Type or member is obsolete
+#pragma warning restore CS0618 // Type or member is obsolete
+#pragma warning restore CS0618 // Type or member is obsolete
+
+            cap.SetCapability(MobileCapabilityType)
+
+            Driver.driver = new AndroidDriver<IWebElement>("http://127.0.0.1:4723/wd/hub",ICapabilities);
             Driver.driver.Navigate().GoToUrl(config.BaseURL);
 
         }
